@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* PulseWork brand palette */
+@theme inline {
+  --color-navy: #1b2a4a;
+  --color-navy-light: #2c3f66;
+  --color-teal: #0f6e56;
+  --color-teal-dark: #0b5442;
+  --color-teal-light: #e3f2ee;
+  --color-surface: #f4f6f9;
+  --color-risk: #e4572e;
+  --color-risk-light: #fdece6;
+  --color-healthy: #2e9e5b;
+  --color-healthy-light: #e6f5ec;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-navy);
+}
+
+/* Keyboard focus ring in the brand teal */
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
